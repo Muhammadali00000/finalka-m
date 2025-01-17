@@ -1,0 +1,112 @@
+/* Основные стили */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #b7b7b7c1;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00adb5;
+}
+
+/* Бургер-меню */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Анимация навигации */
+.nav {
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav.open {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    // flex-direction: column;
+
+}

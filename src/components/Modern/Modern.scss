@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background {
+    position: relative;
+    width: 100%;
+    height: auto; // Замените на auto, если хотите, чтобы секция растягивалась
+    min-height: 100vh; // Установите минимальную высоту
+    background-image: url('./modern.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    text-align: center; 
+    h1{
+        color: white;
+        padding: 30px;
+        font-size: 35px;
+        width: 100px;
+    }
+  }
+  
+  .data-point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  
+  .data-point .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .data-point:hover .tooltip {
+    display: block;
+  }
+  
+  .data-point .plus-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .tooltip {
+      font-size: 12px;
+    }
+  }
+
+  

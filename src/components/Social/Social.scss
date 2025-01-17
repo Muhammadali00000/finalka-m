@@ -1,0 +1,115 @@
+/* Container for the entire section */
+.social-responsibility-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title styling */
+  .social-responsibility-container h2 {
+    font-size: 2rem; /* Use relative units for better scaling */
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  /* Individual slide styling */
+  .slide {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #555;
+    width: 80%; /* Make width more flexible */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .slide p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    width: 90%; /* Make width more flexible */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Slick slider dots styling */
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333;
+  }
+  
+  /* Responsive styles */
+  
+  /* Styles for small screens (up to 767px) */
+  @media (max-width: 767px) {
+    .social-responsibility-container {
+      padding: 30px 10px;
+    }
+  
+    .slide h3 {
+      font-size: 1.25 rem;
+    }
+  
+    .slide p {
+      font-size: 0.9rem;
+      width: 70%; /* Full width for better readability on small screens */
+    }
+  }
+  
+  /* Styles for medium screens (768px to 1023px) */
+  @media (min-width: 768px) {
+    .social-responsibility-container {
+      width: 80%;
+    }
+  
+    .slide h3 {
+      font-size: 1.75rem;
+    }
+  
+    .slide p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Styles for large screens (1024px and up) */
+  @media (min-width: 1024px) {
+    .social-responsibility-container {
+      width: 60%;
+    }
+  
+    .slide img {
+      max-width: 70%;
+    }
+  
+    .slide h3 {
+      font-size: 2rem;
+    }
+  
+    .slide p {
+      font-size: 1.2rem;
+    }
+  }
+  

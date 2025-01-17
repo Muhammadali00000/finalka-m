@@ -1,0 +1,138 @@
+
+.development {
+    padding: 40px 20px;
+    margin-top: 100px;
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .development__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        flex: 1 1 300px;
+      }
+  
+      .development__content, 
+      .development__content2 {
+        flex: 1 1 500px;
+        padding: 20px;
+  
+        h1 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 15px;
+        }
+      }
+  
+      .development__card {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+  
+        div {
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 8px;
+  
+          h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            
+          }
+  
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .development__wrapper {
+      flex-direction: column;
+    }
+    img {
+      flex: 1 1 100%;
+    }
+  
+    .development__content, 
+    .development__content2,
+    .development__card {
+      flex: 1 1 100%;
+    }
+    .development__card {
+        margin-top: -150px;
+    }
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-top: 50px;
+  
+    &__item {
+      border: 2px solid;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+  
+      h2 {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+  
+      p {
+        margin-top: 5px;
+        font-size: 16px;
+      }
+  
+      &--blue {
+        border-color: #007bff;
+        color: #007bff;
+      }
+  
+      &--green {
+        border-color: #28a745;
+        color: #28a745;
+      }
+  
+      &--orange {
+        border-color: #fd7e14;
+        color: #fd7e14;
+      }
+  
+      &__icon {
+        width: 20px;
+        height: 20px;
+        background-color: currentColor;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  

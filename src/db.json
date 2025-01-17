@@ -1,0 +1,28 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "year": "2021",
+      "category": "",
+      "title": "",
+      "description": "",
+      "url": ""
+    }
+  ],
+  "gallery": {
+    "2021": {
+      "production": [
+        {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "url": ""
+        }
+      ],
+      "products": [],
+      "projects": [],
+      "events": [],
+      "employees": []
+    }
+  }
+}

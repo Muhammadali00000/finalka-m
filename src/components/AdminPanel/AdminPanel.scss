@@ -1,0 +1,31 @@
+.adminka__wrap {
+    padding: 150px 0;
+
+    max-width: 600px;
+    width: 100%;
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        max-width: 600px;
+        width: 100%;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            input {
+                padding: 8px;
+            }
+            
+        }
+
+        button {
+            padding: 8px;
+        }
+    }
+}
