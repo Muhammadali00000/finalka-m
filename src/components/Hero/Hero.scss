@@ -1,107 +1,159 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-  }
-  
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .content {
-    margin-top: 100px;
-    max-width: 800px;
-    margin-bottom: 20px;
-  }
-  
-  .content h1 {
-    font-size: 76px;
-    margin: 10px 0;
-    font-weight: bold;
-    line-height: 1.2;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
 
-  }
-  
-  .content h1 span {
-    display: block;
-    font-size: 78px;
-    font-weight: bold;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  margin-top: 100px;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  font-size: 76px;
+  margin: 10px 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  display: block;
+  font-size: 78px;
+  font-weight: bold;
+  color: #414042;
+}
+
+.image-container {
+  display: flex;
+  // margin-top: -100px;
+
+  p {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 20px;
     color: #414042;
   }
-  
-  
-  .image-container {
-    display: flex;
-    margin-top: -100px;
+}
 
-    p{
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        font-size: 20px;
-        color: #414042;
-    }
+.image-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16 / 9;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: lightgray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation button.active {
+  background-color: grey;
+}
+
+.navigation button:hover {
+  background-color: grey;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content h1 {
+    font-size: 60px;
   }
-  
-  .image-container img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 16 / 9;
+
+  .content h1 span {
+    font-size: 62px;
   }
-  
-  .navigation {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: end;
-    margin-top: 20px;
+
+  .image-container p {
+    font-size: 18px;
   }
-  
+
   .navigation button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: lightgray;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 8px 16px;
+    font-size: 14px;
   }
-  
-  .navigation button.active {
-    background-color:grey;
-  }
-  
-  .navigation button:hover {
-    background-color: grey;
-  }
-  
-    .section {
-      flex-direction: row;
-      text-align: left;
-      align-items: center;
-    }
+}
 
-    @media (max-width: 700px) {
-      .hero__wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 100px;
-      }
-      .image-container{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-      }
-      .content h1{
-        font-size: 70px;
-      }
-    }
+@media (max-width: 768px) {
+  .section {
+    padding: 15px;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .content h1 span {
+    font-size: 50px;
+  }
+
+  .image-container {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-container p {
+    font-size: 16px;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .navigation button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content h1 span {
+    font-size: 38px;
+  }
+
+  .image-container p {
+    font-size: 14px;
+  }
+
+  .navigation button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
