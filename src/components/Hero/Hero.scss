@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
+  overflow-x: hidden; /* Убирает горизонтальный скролл */
 }
 
 .section {
@@ -14,7 +15,7 @@ body {
 }
 
 .content {
-  margin-top: 100px;
+  margin-top: 50px; /* Уменьшен отступ */
   max-width: 800px;
   margin-bottom: 20px;
 }
@@ -35,15 +36,16 @@ body {
 
 .image-container {
   display: flex;
-  // margin-top: -100px;
+  flex-direction: column; /* Исправлено для корректного отображения на малых экранах */
+  gap: 20px;
+}
 
-  p {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    font-size: 20px;
-    color: #414042;
-  }
+.image-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #414042;
 }
 
 .image-container img {
@@ -59,7 +61,7 @@ body {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: center; /* Центрирование кнопок */
   margin-top: 20px;
 }
 
@@ -86,6 +88,7 @@ body {
 @media (max-width: 1024px) {
   .content h1 {
     font-size: 60px;
+    margin-top: 100px;
   }
 
   .content h1 span {
@@ -105,10 +108,11 @@ body {
 @media (max-width: 768px) {
   .section {
     padding: 15px;
+    margin-top: 150px;
   }
 
   .content {
-    margin-top: 50px;
+    margin-top: 30px; /* Уменьшен отступ */
   }
 
   .content h1 {
@@ -117,12 +121,6 @@ body {
 
   .content h1 span {
     font-size: 50px;
-  }
-
-  .image-container {
-    margin-top: 0;
-    flex-direction: column;
-    gap: 20px;
   }
 
   .image-container p {
