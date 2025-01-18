@@ -36,8 +36,8 @@ body {
 
 .image-container {
   display: flex;
-  flex-direction: column; /* Исправлено для корректного отображения на малых экранах */
-  gap: 20px;
+  // flex-direction: column; /* Исправлено для корректного отображения на малых экранах */
+  gap: 50px;
 }
 
 .image-container p {
@@ -91,6 +91,10 @@ body {
     margin-top: 100px;
   }
 
+  .image-container{
+    display: flex;
+    flex-direction: column;
+  }
   .content h1 span {
     font-size: 62px;
   }

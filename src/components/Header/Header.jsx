@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 
-
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,11 +18,15 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <header className="header">
             <div className="logo" data-aos="fade-down" data-aos-delay="200">
                 <Link to={"/"}>
-                <img src="/header-logo.png" alt="" />
+                    <img src="/header-logo.png" alt="" />
                 </Link>
             </div>
             <div
@@ -36,12 +39,12 @@ const Header = () => {
             </div>
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
                 <div className="link">
-                <Link to={"/about"} data-aos="fade-down" data-aos-delay="300">О компании</Link>
-                <Link to={"/devel"} data-aos="fade-down" data-aos-delay="400">Развития</Link>
-                <Link to={"/structure"} data-aos="fade-down" data-aos-delay="500">Управления</Link>
-                <Link to={"/contact"} data-aos="fade-down" data-aos-delay="600">Контакт</Link>
-                <Link to={"/excursion"} data-aos="fade-down" data-aos-delay="700">Экскурсия</Link>
-                {/* <Link to={"/gallery"} data-aos="fade-down" data-aos-delay="800">Фотогалерея</Link> */}
+                    <Link to={"/about"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="300">О компании</Link>
+                    <Link to={"/devel"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="400">Развития</Link>
+                    <Link to={"/structure"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="500">Управления</Link>
+                    <Link to={"/contact"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="600">Контакт</Link>
+                    <Link to={"/excursion"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="700">Экскурсия</Link>
+                    {/* <Link to={"/gallery"} onClick={closeMenu} data-aos="fade-down" data-aos-delay="800">Фотогалерея</Link> */}
                 </div>
             </nav>
         </header>
