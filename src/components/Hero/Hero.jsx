@@ -61,7 +61,7 @@ const Hero = () => {
             {slides[currentSlide].title} <span>{slides[currentSlide].subtitle}</span>
           </h1>
         </div>
-        <div className="image-container" data-aos="fade-left">
+        <div className="image-container" data-aos="fade-up">
           <p>{slides[currentSlide].description}</p>
           <img src={slides[currentSlide].image} alt="Тольяттиазот" data-aos="zoom-in" />
         </div>
