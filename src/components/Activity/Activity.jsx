@@ -16,7 +16,7 @@ const Activity = () => {
             <h1>Деятельность компании</h1>
             <div className="activity__img">
               <img className="act_img_1" src="./activity-2.png" alt="" data-aos="fade-right" />
-              <img className="act_img_2" src="./activity-1.png" alt="" data-aos="fade-left" />
+              <img className="act_img_2" src="./activity-1.png" alt="" data-aos="fade-right" />
             </div>
           </div>
           <div className="activity__text" data-aos="fade-up">
@@ -24,7 +24,7 @@ const Activity = () => {
               Модернизация, технологии, экология, человеческий капитал — все это
               приоритеты развития «Тольяттиазот»
             </h2>
-            <p data-aos="zoom-in-left">
+            <p data-aos="zoom-out-down">
               Основной деятельностью ТОАЗа является выпуск минеральных удобрений
               и химической продукции. Сегодня завод включает в себя 7 агрегатов
               по производству аммиака и 2 агрегата карбамида, расположенных на

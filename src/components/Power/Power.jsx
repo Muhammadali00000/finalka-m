@@ -30,7 +30,7 @@ const Power = () => {
           <p>тонн Жидкого аммиака в год</p>
         </div>
       </div>
-      <div className="image" data-aos="fade-left">
+      <div className="image" data-aos="zoom-out-down">
         <img src="power-img.png" alt="Plant" />
       </div>
         </div>
