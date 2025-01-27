@@ -20,12 +20,17 @@ const Header = () => {
 
     const closeMenu = () => {
         setMenuOpen(false);
+        // Прокрутка страницы вверх
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Плавная прокрутка
+        });
     };
 
     return (
         <header className="header">
             <div className="logo" data-aos="fade-down" data-aos-delay="200">
-                <Link to={"/"}>
+                <Link to={"/"} onClick={closeMenu}>
                     <img src="/header-logo.png" alt="" />
                 </Link>
             </div>
