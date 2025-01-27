@@ -12,8 +12,8 @@ const Development = () => {
     <section className="development">
       <div className="container">
         <div className="development__wrapper">
-          <img src="./development.png" alt="" data-aos="fade-right" />
-          <div className="development__content" data-aos="fade-left">
+          <img src="./development.png" alt="" data-aos="fade-down" />
+          <div className="development__content" data-aos="fade-down">
             <h1>Стратегия развития</h1>
             <p>
               Мы уделяем серьезное внимание безопасности и бесперебойности
@@ -47,7 +47,7 @@ const Development = () => {
               </p>
             </div>
           </div>
-          <div className="development__content2" data-aos="fade-right">
+          <div className="development__content2" data-aos="fade-up">
             <h1>Стратегические приоритеты ТОАЗа:</h1>
             <p>
               • Работники <br />

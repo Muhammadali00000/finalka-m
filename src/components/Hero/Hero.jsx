@@ -56,7 +56,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero__wrapper">
 
-        <div className="content" data-aos="fade-right">
+        <div className="content" data-aos="fade-down">
           <h1>
             {slides[currentSlide].title} <span>{slides[currentSlide].subtitle}</span>
           </h1>

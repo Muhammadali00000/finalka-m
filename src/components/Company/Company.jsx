@@ -14,7 +14,7 @@ const Company = () => {
         <div className="container">
           <img src="company-1.png" alt="" data-aos="fade-up" />
           <div className="company__wrapper">
-            <div className="company__text-1" data-aos="fade-right">
+            <div className="company__text-1" data-aos="fade-up">
               <h1>О компании</h1>
               <p>
                 ПАО «Тольяттиазот» (ТОАЗ) – одно из крупнейших предприятий
@@ -38,7 +38,7 @@ const Company = () => {
               </p>
             </div>
 
-            <div className="company__text-2" data-aos="fade-left">
+            <div className="company__text-2" data-aos="fade-up">
               <div className="text-1">
                 <h2>
                   <p>стран мира</p>

@@ -15,8 +15,8 @@ const Activity = () => {
           <div className="activity__wrapp" data-aos="fade-up">
             <h1>Деятельность компании</h1>
             <div className="activity__img">
-              <img className="act_img_1" src="./activity-2.png" alt="" data-aos="fade-right" />
-              <img className="act_img_2" src="./activity-1.png" alt="" data-aos="fade-right" />
+              <img className="act_img_1" src="./activity-2.png" alt="" data-aos="fade-up" />
+              <img className="act_img_2" src="./activity-1.png" alt="" data-aos="fade-up" />
             </div>
           </div>
           <div className="activity__text" data-aos="fade-up">

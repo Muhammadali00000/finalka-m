@@ -17,7 +17,8 @@
       img {
         max-width: 100%;
         height: auto;
-        flex: 1 1 300px;
+        object-fit: cover;
+        // flex: 1 1 300px;
       }
   
       .development__content, 

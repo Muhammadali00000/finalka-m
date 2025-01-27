@@ -30,8 +30,8 @@ const Product = () => {
     <section className="product-section">
         <div className="container">
             <div className="product__header">
-                <h2 data-aos="fade-right">Продукция ПАО Тольяттиазот</h2>
-                <p data-aos="fade-right">Экологическая чистота. Собственные биологические очистные сооружения Тольяттиазота обеспечивают такую степень очистки сточных вод предприятия 
+                <h2 data-aos="fade-down">Продукция ПАО Тольяттиазот</h2>
+                <p data-aos="fade-down">Экологическая чистота. Собственные биологические очистные сооружения Тольяттиазота обеспечивают такую степень очистки сточных вод предприятия 
                 и нескольких районов города.</p>
             </div>
             <div className="product-grid">
