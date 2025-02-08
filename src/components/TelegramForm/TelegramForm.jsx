@@ -15,8 +15,8 @@ function TelegramForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const token = '7461316379:AAHUm_Af6nVSro9fnQ47UlSPCcPCOqR_IE0'; // Replace with your token
-    const chat_id = '-4593074289'; // Replace with your chat_id
+    const token = '8121031295:AAGzq26eenqL89huakkfHYosSUMD_vvnwrI'; // Replace with your token
+    const chat_id = '1572761471'; // Replace with your chat_id
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
     const message = ` ${name}\ ${phone}`;
